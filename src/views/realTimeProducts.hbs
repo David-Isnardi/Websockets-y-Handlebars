@@ -1,0 +1,105 @@
+<div class="container">
+    <div>
+        <div>
+            <h2>Agregar producto</h2>
+            <form id="addProduct">
+                <div>
+                    <div>
+                        <label for="title">Nombre</label>
+                        <div>
+                            <input required type="text" id="title" name="code">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="description">Descripción</label>
+                        <div>
+                            <input required type="text" id="description" name="description">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <label for="code">Código</label>
+                        <div>
+                            <input required type="text" id="code" name="code">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="price">Precio</label>
+                        <div>
+                            <input required type="number" id="price" name="price">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="stock">Stock</label>
+                        <div>
+                            <input required type="number" id="stock" name="stock">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="category">Categoria</label>
+                        <div>
+                            <input required type="text" id="category" name="category">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="thumbnails">Thumbnails</label>
+                        <div>
+                            <input type="text" id="thumbnails" name="thumbnails">
+                        </div>
+                    </div>                    
+                </div>
+                <button type="submit" value="Submit">Agregar</button>
+            </form>
+            <hr>
+            <h2>Eliminar producto</h2>
+            <form id="deleteProduct">
+                <div>
+                    <div>
+                        <label for="pid">ID Producto</label>
+                        <div>
+                            <input required type="number"id="pid" name="pid">
+                        </div>
+                    </div> 
+                </div>
+                <button type="submit" value="Submit">Eliminar</button>
+            </form>
+        </div>
+        <div>
+            <h2>Lista de productos</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Código</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Categoria</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="listaProductos">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/main.js"></script>

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Helado",
+    "description": "Conaprole",
+    "code": "A123",
+    "price": "600",
+    "status": true,
+    "stock": "10",
+    "category": "Comestible",
+    "thumbnails": "SinImagen"
+  },
+  {
+    "id": 2,
+    "title": "Pan",
+    "description": "Bimbo",
+    "code": "B123",
+    "price": "200",
+    "status": true,
+    "stock": "20",
+    "category": "Comestible",
+    "thumbnails": "SinImagen"
+  },
+  {
+    "id": 3,
+    "title": "Papitas ",
+    "description": "Maria Bonita",
+    "code": "C123",
+    "price": "260",
+    "status": true,
+    "stock": "30",
+    "category": "Comestible",
+    "thumbnails": "SinImagen"
+  }
+]
